@@ -21,4 +21,17 @@ document.getElementById('btn').addEventListener('click', function () {
     person2.sex = document.getElementById('women2').checked ? 'w' : 'm';
     console.log(person1)
     console.log(person2)
+    document.getElementById('nametag1').innerText = person1.firstname;
+    document.getElementById('nametag2').innerText = person2.firstname;
+    if (person1.sex == "m"){
+        document.getElementById('person1').src = 'img/man.png';
+    } else {
+        document.getElementById('person1').src = 'img/woman.png';
+    }
+
+    if (person2.sex == "m"){
+        document.getElementById('person2').src = 'img/man.png';
+    } else {
+        document.getElementById('person2').src = 'img/woman.png';
+    }
 })
